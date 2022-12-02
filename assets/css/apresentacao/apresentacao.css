@@ -1,0 +1,117 @@
+.ct-apresentacao {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 106px 0 80px 0;
+}
+
+.ct-apresentacao__conteudo h1 {
+  color: #F9F9F9;
+  font-size: 48px;
+  line-height: 140%;
+}
+.ct-apresentacao__conteudo > p {
+  color: #737373;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  margin: 1rem 0 2rem;
+}
+.ct-apresentacao__conteudo a {
+  color: #F9F9F9;
+  background-color: #3772FF;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 0.5rem 3rem;
+  display: inline-block;
+  margin-bottom: 3rem;
+}
+.ct-apresentacao__conteudo a:hover {
+  background-color: rgb(72, 72, 247);
+}
+
+.ct-visualizacao {
+  display: grid;
+  grid-template-columns: repeat(3, 130px);
+  text-align: center;
+}
+.ct-visualizacao p {
+  color: #F9F9F9;
+  font-size: 32px;
+  line-height: 39px;
+  margin-bottom: 8px;
+}
+.ct-visualizacao span {
+  color: #737373;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+@media screen and (max-width: 1024px) {
+  .ct-apresentacao img {
+    width: 35%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .ct-apresentacao__conteudo h1 {
+    font-size: 24px;
+    line-height: 140%;
+  }
+  .ct-apresentacao__conteudo p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .ct-apresentacao__conteudo a {
+    font-size: 10px;
+    line-height: 14px;
+    width: 67%;
+    text-align: center;
+  }
+  .ct-apresentacao img {
+    display: none;
+  }
+  .ct-visualizacao {
+    grid-template-columns: repeat(3, 125px);
+  }
+}
+@media screen and (max-width: 390px) {
+  .ct-apresentacao__conteudo a {
+    width: 67%;
+  }
+  .ct-visualizacao {
+    grid-template-columns: repeat(3, 108px);
+  }
+}
+@media screen and (max-width: 375px) {
+  .ct-apresentacao__conteudo a {
+    width: 70%;
+  }
+  .ct-visualizacao {
+    grid-template-columns: repeat(3, 107px);
+  }
+}
+@media screen and (max-width: 360px) {
+  .ct-apresentacao__conteudo a {
+    width: 67%;
+  }
+  .ct-visualizacao {
+    grid-template-columns: repeat(3, 98px);
+  }
+}
+@media screen and (max-width: 320px) {
+  .ct-apresentacao__conteudo br {
+    display: none;
+  }
+  .ct-apresentacao__conteudo a {
+    width: 62%;
+  }
+  .ct-visualizacao {
+    grid-template-columns: repeat(3, 85px);
+  }
+}/*# sourceMappingURL=apresentacao.css.map */

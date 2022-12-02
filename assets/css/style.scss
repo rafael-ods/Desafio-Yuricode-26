@@ -1,0 +1,18 @@
+@import './variavelScss/_variavel';
+@import '../css/cabecalho/cabecalho.css';
+@import './apresentacao/apresentacao.css';
+@import './colecoes/colecoes.css';
+@import './artistas/artistas.css';
+@import './rodape/rodape.css';
+body {
+    background-color: $preto;
+    font-family: $fonte-principal;
+    font-weight: 600;
+}
+
+
+.container {
+    max-width: 1230px;
+    margin: 0 auto;
+    padding: 0rem 2rem;
+}

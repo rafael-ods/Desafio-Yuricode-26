@@ -1,0 +1,121 @@
+@import '../variavelScss/variavel';
+
+.colecoes {
+    display: flex;
+    align-self: center;
+    column-gap: 51px;
+    margin-bottom: 80px;
+}
+
+.ct-colecoes {
+    margin-left: 80px;
+
+    h2 {
+        color: $branco;
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 48px;
+        margin-bottom: 2rem;
+    }
+
+    a {
+        color: $branco;
+        background-color: $azul;
+        border-radius: 4px;
+        text-decoration: none;
+        text-transform: uppercase;
+        padding: 0.5rem 3rem;
+
+        &:hover {
+            background-color: rgb(72, 72, 247);
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .colecoes {
+        flex-wrap: wrap;
+    }
+
+    .ct-colecoes {
+        margin: 25px 0;
+
+        a {
+            display: inline-block;
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .colecoes {
+        margin-bottom: 48px;
+
+        img {
+            width: 100%;
+            margin-bottom: 1.5rem;
+        }
+
+        .ct-colecoes {
+            h2 {
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 24px;
+            }
+
+            a {
+                font-size: 14px;
+                width: 100%;
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .colecoes {
+        .ct-colecoes {
+            a {
+                width: 96%;
+            }
+        }
+    }
+}
+@media screen and (max-width: 390px) {
+    .colecoes {
+        .ct-colecoes {
+            a {
+                width: 87%;
+            }
+        }
+    }
+}
+@media screen and (max-width: 375px) {
+    .colecoes {
+        .ct-colecoes {
+            a {
+                width: 81%;
+            }
+        }
+    }
+}
+@media screen and (max-width: 360px) {
+    .colecoes {
+        .ct-colecoes {
+            a {
+                width: 76%;
+            }
+        }
+    }
+}
+@media screen and (max-width: 320px) {
+    .colecoes {
+        .ct-colecoes {
+            h2 {
+                font-size: 19px;
+            }
+            a {
+                width: 61%;
+            }
+        }
+    }
+}

@@ -1,0 +1,16 @@
+@import '../css/cabecalho/cabecalho.css';
+@import './apresentacao/apresentacao.css';
+@import './colecoes/colecoes.css';
+@import './artistas/artistas.css';
+@import './rodape/rodape.css';
+body {
+  background-color: #0C0C0C;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+}
+
+.container {
+  max-width: 1230px;
+  margin: 0 auto;
+  padding: 0rem 2rem;
+}/*# sourceMappingURL=style.css.map */

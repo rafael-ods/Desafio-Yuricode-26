@@ -1,0 +1,56 @@
+.artistas {
+  margin-bottom: 80px;
+}
+.artistas h2 {
+  color: #F9F9F9;
+  font-weight: 500;
+  font-size: 40px;
+  margin-bottom: 40px;
+  display: block;
+}
+
+.ct-artista {
+  display: flex;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+.ct-artista .card__artista {
+  position: relative;
+}
+.ct-artista .card__artista h3 {
+  color: #F9F9F9;
+  font-size: 24px;
+  top: 24px;
+  left: 24px;
+  position: absolute;
+}
+.ct-artista .card__artista p {
+  color: #EBEBEB;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  position: absolute;
+  top: 61px;
+  left: 24px;
+}
+
+@media screen and (max-width: 1024px) {
+  .ct-artista {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    row-gap: 20px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .artistas h2 {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .artistas .ct-artista {
+    justify-content: flex-start;
+  }
+  .artistas .ct-artista .card__artista img {
+    width: 100%;
+  }
+}/*# sourceMappingURL=artistas.css.map */

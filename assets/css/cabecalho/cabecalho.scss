@@ -1,0 +1,95 @@
+@import '../variavelScss/variavel';
+
+.cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem !important;
+
+    a {
+        &:nth-child(1) {
+            color: $branco;
+            font-weight: 600;
+            font-size: 32px;
+            line-height: 39px;
+            text-decoration: none;
+        }
+    }
+
+    .box-input {
+        position: relative;
+
+        input {
+            color: $cinza;
+            border: none;
+            border-radius: 4px;
+            outline: none;
+            width: 644px;
+            height: 40px;
+            background-color: $cinza-claro;
+            padding-left: 2rem;
+
+
+            &::placeholder {
+                color: $cinza;
+                font-weight: 400;
+                font-size: 13.4796px;
+                line-height: 16px;
+            }
+        }
+
+        .icon {
+            color: $cinza;
+            position: absolute;
+            top: 13.37px;
+            right: 18px;
+        }
+    }
+
+    a {
+        &:last-child {
+            color: $branco;
+            background-color: $azul;
+            border-radius: 4px;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 17px;
+            text-decoration: none;
+            text-transform: uppercase;
+            padding: 0.5rem 3rem;
+        }
+
+        &:hover {
+            background-color: rgb(72, 72, 247);
+        }
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .cabecalho {
+        .box-input {
+            input {
+                width: 350px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 500px) {
+    .cabecalho {
+       
+        .box-input {
+            input {
+                display: none;
+            }
+            .icon {
+                display: none;
+            }
+        }
+        a {
+            &:last-child{
+                font-size: 10px;
+            }
+        }
+    }
+}

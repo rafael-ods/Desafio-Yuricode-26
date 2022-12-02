@@ -1,0 +1,68 @@
+@import '../variavelScss/variavel';
+
+.artistas {
+    margin-bottom: 80px;
+
+    h2 {
+        color: $branco;
+        font-weight: 500;
+        font-size: 40px;
+        margin-bottom: 40px;
+        display: block;
+    }
+}
+
+
+.ct-artista {
+    display: flex;
+    column-gap: 10px;
+
+    .card__artista {
+        position: relative;
+
+        h3 {
+            color: $branco;
+            font-size: 24px;
+            top: 24px;
+            left: 24px;
+            position: absolute;
+        }
+
+        p {
+            color: $cinza-claro;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 17px;
+            position: absolute;
+            top: 61px;
+            left: 24px;
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .ct-artista {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        row-gap: 20px;
+
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .artistas {
+        h2 {
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 29px;
+        }
+        .ct-artista {
+            justify-content: flex-start;
+            .card__artista {
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
